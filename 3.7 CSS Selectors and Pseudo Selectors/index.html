@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors and Pseudo Selectors</title>
+    <style>
+      input[required="required"] {
+        background-color: blue;
+        color: white;
+      }
+      input {
+        border: 1px solid yellow;
+      }
+      .box {
+        background-color: green;
+        border: 1px solid black;
+        height: 100px;
+      }
+      .box:nth-child(2n) {
+        background-color: pink;
+      }
+      .contaniner > .box {
+        background-color: peru;
+      }
+      .child {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contaniner">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required" />
+        <input type="submit" />
+      </div>
+    </div>
+  </body>
+</html>
